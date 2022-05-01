@@ -74,6 +74,9 @@ li a:visited{
   justify-content: center;
   flex-direction: column;
   height:  100vh;
+        border-radius: 6rem;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+        margin: 20px;
 }
 
 .slogan__container {
@@ -132,18 +135,187 @@ padding: 14px;
 
 
 
-/**Sección About**/
 
-.about{
+/**seccion logistica**/
+
+.logistica {
   display: flex;
   height: 100vh;
-justify-content: center;
-align-items: center;
-opacity: 0.85;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+      border-radius: 6rem;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+      margin: 20px;
+}
+
+.logistica__texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(126, 124, 124);
+  height: 250px;
+  max-width: 800px;
+        border-radius: 6rem;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
 
 }
 
-.about__texto{
+.logistica__texto h3{
+margin: 30px;
+justify-content: center;
+font-size: 5ch;
+}
+
+.logistica__texto p{
+  margin: 30px;
+  padding: 15px;
+
+color: white;
+font-size: large;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-indent: 2% ;
+  border-radius: 6rem;
+  height: 100px;
+  align-items: center;
+
+}
+
+.logistica__caracteristicas{
+  display: flex;
+  height: 400px;
+  width: 80%;
+  background-color: rgb(150, 142, 142);
+  justify-content: space-around;
+align-items: center;
+      border-radius: 6rem;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.logistica__caracteristicas div{
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 290px;
+  background-color: rgb(64, 64, 119);
+border:3px
+solid black;
+  margin: 2px;
+        border-radius: 4rem;
+        align-items: center;
+        justify-content: center;
+        
+}
+
+.logistica__caracteristicas p{
+  font-size: large;
+  text-align: center;
+  word-spacing: 1px;
+  color: aliceblue;
+}
+
+.logistica__caracteristicas i,p{
+  margin: 10px;
+padding: 15px;
+}
+
+/**Sección productos**/
+
+.productos {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6rem;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.productos__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rgb(126, 124, 124);
+  height: 120px;
+  max-width: 800px;
+  border-radius: 6rem;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  margin: 15px;
+
+}
+
+.productos__texto h3 {
+  margin: 30px;
+  justify-content: center;
+  font-size: 5ch;
+}
+
+
+.productos__caracteristicas {
+  display: flex;
+height: 750px;
+  width: 45%;
+  background-color: rgb(73, 64, 116);
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 6rem;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+flex-wrap: wrap;
+}
+
+.productos__caracteristicasHijo {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(144, 144, 180);
+  border: 3px solid black;
+  margin: 35px;
+  border-radius: 4rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.productos__caracteristicasHijo img{
+
+height: 150px;
+width: 150px;
+
+  background-size: cover;
+  border-radius: 50%;
+    margin: 15px;
+    border: 3px solid rgb(26, 54, 25);
+}
+
+
+.productos__caracteristicas p {
+  font-size: large;
+  text-align: center;
+  word-spacing: 1px;
+  color: rgb(7, 9, 10);
+}
+
+/**Sección About**/
+
+.about {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.85;
+  border-radius: 6rem;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.about__texto {
   display: flex;
   background-color: white;
   max-width: 600px;
@@ -157,11 +329,11 @@ opacity: 0.85;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
 }
 
-.about__texto h1{
+.about__texto h1 {
   font-size: 50px;
   margin: 50px;
 }
 
-.about__texto p{
+.about__texto p {
   font-size: 18px;
 }
