@@ -10,6 +10,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--navbar-->
@@ -34,7 +40,7 @@
     </nav>
 
     <!--Sección 1 (slogan)-->
-    <section class="seccion__slogan">
+    <section class="seccion__slogan" id="slogan">
       <div class="slogan__container">
         <div class="slogan__texto">
           <h1>Al té té y al vino vino</h1>
@@ -45,11 +51,18 @@
         <div class="slogan__img">
           <img src="./imagenes/teverdec.jpeg" alt="" />
         </div>
+        <div class="cualidades">
+          <ul>
+            <li>Buen asesoramiento en productos</li>
+            <li>Sabores variados e intensos</li>
+            <li><a href="#logistica">Más</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!--Sección 3 logistica-->
-    <section class="logistica">
+    <!--Sección 2 logistica-->
+    <section class="logistica" id="logistica">
       <div class="logistica__texto">
         <h3>Lorem ipsum dolor sit amet.</h3>
         <p>
@@ -75,13 +88,12 @@
       </div>
     </section>
 
-    <!--Sección productos-->
+    <!--Sección 3 productos-->
     <!--titulo-->
-    <section class="productos">
+    <section class="productos" id="productos">
       <div class="productos__texto">
         <h3>Nuestros productos</h3>
       </div>
-
       <div class="productos__caracteristicas">
         <div class="productos__caracteristicasHijo">
           <!--imagenes-->
@@ -104,24 +116,99 @@
         </div>
       </div>
     </section>
-    <!--Sección 2 (about)-->
-    <section class="about" id="about">
-      <div class="about__texto">
-        <h1>Sobre nosotros</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odit et,
-          voluptatibus quis, rem, ab consectetur labore eaque voluptatum veniam
-          saepe incidunt. A, nulla. Saepe, libero. Iure repellat incidunt quo
-          quam non ad assumenda mollitia sunt. Voluptatibus cumque, asperiores
-          vel neque et, dignissimos accusantium error sequi voluptate in at!
-          Nesciunt ipsum veritatis quisquam, commodi, esse temporibus quae aut
-          nulla reiciendis ut quaerat laborum corporis? Id perferendis assumenda
-          explicabo accusantium laudantium fugit, ducimus eligendi neque esse
-          nihil odit magnam ipsa sunt expedita amet qui facere earum repellendus
-          numquam magni. Ex impedit nostrum assumenda, inventore eius atque quae
-          accusantium exercitationem est saepe!
-        </p>
+
+    <!--Sección 4 clientes/proyectos/etc-->
+    <section class="clientes" id="clientes">
+      <div class="clientes__titulo">
+        <h1>Nuestros Clientes</h1>
+      </div>
+      <div class="clientes__cartas">
+        <div class="clientes__hijo" style="background: #88b04b">
+          <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+          <a class="btnclientes" href="#">Cliente 1</a>
+        </div>
+        <div class="clientes__hijo" style="background: #34568b">
+          <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+          <a class="btnclientes" href="#">Cliente 2</a>
+        </div>
+        <div class="clientes__hijo" style="background: #ff6f61">
+          <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+          <a class="btnclientes" href="#">Cliente 3</a>
+        </div>
+        <div class="clientes__hijo" style="background: #f7cac9">
+          <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+          <a class="btnclientes" href="#">Cliente 4</a>
+        </div>
+        <div class="clientes__hijo" style="background: #6b5b95">
+          <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+          <a class="btnclientes" href="#">Cliente 5</a>
+        </div>
+        <div class="clientes__hijo" style="background: #45b8ac">
+          <i class="fa fa-user-o fa-5x" aria-hidden="true"></i>
+          <a class="btnclientes" href="#">Cliente 6</a>
+        </div>
       </div>
     </section>
+    <!--Sección 5 (about y contacto)-->
+    <section class="about" id="about">
+      <div class="about__padre">
+        <div class="about__contacto">
+          <h2>Información de contacto</h2>
+          <ul class="contacto__info">
+            <li>
+              <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+              <span> XX X XXX XXXX</span>
+            </li>
+            <li>
+              <span><i class="fa fa-home" aria-hidden="true"></i></span>
+              <span>calle siempreviva 1462 departamento 9 </span>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+              <span>asd@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+        <div class="about__texto">
+          <h1>Sobre nosotros</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odit
+            et, voluptatibus quis, rem, ab consectetur labore eaque voluptatum
+            veniam saepe incidunt. A, nulla. Saepe, libero. Iure repellat
+            incidunt quo quam non ad assumenda mollitia sunt. Voluptatibus
+            cumque, asperiores vel neque et, dignissimos accusantium error sequi
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="about__container"></div>
+      <div class="footer__container">
+        <div class="footer__fila">
+          <div class="footer__columna">
+            <h4>Compañía</h4>
+            <ul>
+              <li><a href="#">Politica de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer__columna">
+            <h4>Secciones</h4>
+            <ul>
+              <li><a href="#slogan">Nuestra compañía</a></li>
+              <li><a href="#logistica">Logística</a></li>
+              <li><a href="#calidad">Calidad</a></li>
+              <li><a href="#clientes">Clientes</a></li>
+              <li><a href="#about">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__imagen">
+            <img src="./imagenes/tazadete.png" alt="" />
+          </div>
+        </div>
+        <div class="copyright"><p>© XXXX Fisuto</p></div>
+      </div>
+    </footer>
   </body>
 </html>
